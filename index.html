@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <!--javascript-->
     <script src="jquery/jquery-2.2.0.min.js"></script>
+    <script src="tidyhome.js"></script>
 </head>
     
 <body>
@@ -28,7 +29,7 @@
 <h1>TIDYHOME</h1>
     
 <div class="login-form">
-     <div class="form-group ">
+     <div class="form-group">
        <input type="text" class="form-control" placeholder="Username" id="UserName">
        <i class="fa fa-user"></i>
      </div>
@@ -50,27 +51,72 @@
     <h1>Registration</h1>
     <div class="login-form" id="sign-up-form">
      <div class="form-group ">
-       <input type="text" class="form-control" placeholder="First name" id="UserName">
+       <input type="text" class="form-control" placeholder="First name" id="FirstName">
        <i class="fa fa-user"></i>
      </div>
      <div class="form-group log-status">
-       <input type="text" class="form-control" placeholder="Last name" id="UserName">
+       <input type="text" class="form-control" placeholder="Last name" id="LastName">
        <i class="fa fa-lock"></i>
      </div>
      <div class="form-group log-status">
-       <input type="text" class="form-control" placeholder="Email" id="UserName">
+       <input type="text" class="form-control" placeholder="Email" id="EmailAddress">
        <i class="fa fa-lock"></i>
      </div>
-     <button type="button" class="log-btn" id="submit-btn">Submit</button>
+     <button type="button" class="log-btn" id="submit-btn-1">Submit</button>
    </div>
 </section>
 
 <!--main screen-->
-<section>
-
+<section id="main-screen">
+    <nav class="navwrapper-1">   
+        <ul class="main-nav-logo">
+            <li>TIDYHOME</li>   
+        </ul>
+        <img class="list-icon" src="images/icons/list.png" />
+    </nav>
+    
+    <img class="add-icon-large" src="images/icons/add-large.png" />
+    <h4 class="add-chore-list">Add Chore List</h4>
 </section> 
+    
+<!--sidebar-->
+<section id="sidebar">
+    <nav class="navwrapper-2">  
+        <img class="back-icon" src="images/icons/back.png" />
+        <img class="ashley" src="images/ashley.png" />
+        <h4 class="name">Ashley Pae</h4>   
+        <img class="add-icon" src="images/icons/add.png" />
+        <h6 class="housemates">Add Housemates</h6>
+        <img class="help-icon" src="images/icons/help.png" />
+        <img class="settings-icon" src="images/icons/settings.png" />
+    </nav>
+</section>
+ 
+<!--chore form-->
+<section id="chore-form">
+    <h1>Chore List</h1>
+    <div class="login-form" id="sign-up-form">
+     <div class="form-group ">
+       <input type="text" class="form-control" placeholder="Chore 1" id="Chore1">
+       <i class="fa fa-user"></i>
+     </div>
+     <div class="form-group log-status">
+       <input type="text" class="form-control" placeholder="Chore 2" id="Chore2">
+       <i class="fa fa-lock"></i>
+     </div>
+     <div class="form-group log-status">
+       <input type="text" class="form-control" placeholder="Chore 3" id="Chore3">
+       <i class="fa fa-lock"></i>
+     </div>
+     <div class="form-group log-status">
+       <input type="text" class="form-control" placeholder="Chore 4" id="Chore4">
+       <i class="fa fa-lock"></i>
+     </div>
 
-<script src="tidyhome.js"></script>
+     <button type="button" class="log-btn" id="submit-btn-2">Submit</button>
+   </div>
+</section>
+
 </body>
 
 </html>
